@@ -23,14 +23,11 @@ if __name__ == '__main__':
     recipe_json = ('{"title": "Spaghetti Bolognese", "ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, '
                    '"Minced Meat": 500}, "servings": 4}')
 
-    # Load the recipe from the JSON string
     recipe = load_recipe(recipe_json)
     print('Original Recipe:', recipe)
 
-    # Adjust the recipe for 2 people
     adjusted_recipe = adjust_recipe(recipe, 2)
     print('Adjusted Recipe for 2 people:', adjusted_recipe)
 
-    # Adjust the recipe for 8 people
     adjusted_recipe = adjust_recipe(recipe, 8)
     print('Adjusted Recipe for 8 people:', adjusted_recipe)
